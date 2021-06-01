@@ -1,0 +1,1 @@
+Synagogues application.
