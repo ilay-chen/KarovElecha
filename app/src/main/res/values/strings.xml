@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">קרוב אליך</string>
+    <string name="notification">notification</string>
+    <string name="notificationData"></string>
+
+    <string-array name="settlements">
+        <item>איבי הנחל</item>
+        <item>אלון שבות</item>
+        <item>אלעזר</item>
+        <item>בת עין</item>
+        <item>גבעות</item>
+        <item>הר גילה</item>
+        <item>כפר אלדד</item>
+        <item>כפר עציון</item>
+        <item>כרמי צור</item>
+        <item>מגדל עוז</item>
+        <item>מיצד</item>
+        <item>מעלה עמוס</item>
+        <item>מעלה רחבעם</item>
+        <item>מרחבי דוד</item>
+        <item>נוה דניאל</item>
+        <item>נוקדים</item>
+        <item>פני קדם</item>
+        <item>קידר</item>
+        <item>קידר דרום</item>
+        <item>ראש צורים</item>
+        <item>שדה בעז</item>
+        <item>שדה בר</item>
+        <item>תקוע</item>
+    </string-array>
+
+    <string-array name="engSettlements">
+        <item>31.605613, 35.219523</item>
+        <item>31.655158, 35.125669</item>
+        <item>31.659762, 35.142865</item>
+        <item>31.657940, 35.100399</item>
+        <item>31.678925, 35.102021</item>
+        <item>31.722067, 35.171229</item>
+        <item>31.653943, 35.251081</item>
+        <item>31.649070, 35.115235</item>
+        <item>31.609280, 35.101430</item>
+        <item>31.640648, 35.142601</item>
+        <item>31.585795, 35.187541</item>
+        <item>31.596296, 35.229794</item>
+        <item>31.647435, 35.259080</item>
+        <item>31.657867, 35.101612</item>
+        <item>31.676373, 35.143449</item>
+        <item>31.644699, 35.244014</item>
+        <item>31.589208, 35.195303</item>
+        <item>31.754366, 35.311084</item>
+        <item>31.746118, 35.301646</item>
+        <item>31.667962, 35.125605</item>
+        <item>31.690627, 35.146363</item>
+        <item>31.657976, 35.244628</item>
+        <item>31.653013, 35.227826</item>
+    </string-array>
+    <string name="title_activity_info">info</string>
+    <string name="link"><a href="https://sites.google.com/view/icstudios/%D7%99%D7%A9%D7%99%D7%91%D7%AA-%D7%94%D7%94%D7%A1%D7%93%D7%A8-%D7%99%D7%A8%D7%95%D7%97%D7%9D">Privacy Policy</a></string>
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="#E0E0E0"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.flower.karovelecha.contact">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#a36a9f"
+        android:layoutDirection="rtl"
+        android:id="@+id/panel">
+
+        <TextView
+            android:layout_weight="1"
+            android:text="צור קשר"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="25dp"
+            android:id="@+id/synagogaName" />
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:paddingRight="50dp"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="34dp"
+        android:paddingLeft="34dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:layout_below="@id/panel">
+
+    <TextView
+        android:text="צור קשר"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:text="יושב ראש המועצה הדתית גוש עציון"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView9" />
+
+    <TextView
+        android:text="אלון שבות, 90433"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView10" />
+
+    <TextView
+        android:text="טלפון: 02-9939918"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView11" />
+
+    <TextView
+        android:text="mdatit1@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView13" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="שם מלא"
+        android:ems="10"
+        android:background="#EEEEEE"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/name"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="אימייל"
+        android:background="#EEEEEE"
+        android:ems="10"
+        android:layout_below="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/email"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="טלפון"
+        android:background="#EEEEEE"
+        android:layout_below="@+id/email"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/phone"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:background="#EEEEEE"
+        android:hint="הארות / הערות שחשוב שנדע"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="5dp"
+        android:id="@+id/data"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/send" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:background="#00FFFFFF"
+            android:src="@drawable/home3"
+            android:id="@+id/home"
+            android:layout_alignTop="@+id/textView10"
+            android:layout_alignParentLeft="true" />
+
+    <Button
+        android:background="@drawable/send"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/send"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="הרב רפי אוסטרוף"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

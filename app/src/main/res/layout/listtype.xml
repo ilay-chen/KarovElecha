@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="text1"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:id="@+id/highlight" />
+
+
+            <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:background="@drawable/wazeimage"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/diraction"
+            android:focusable="false"/>
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="text2"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/highlight"
+                android:layout_toRightOf="@+id/diraction" />
+
+        </RelativeLayout>
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flower.karovelecha.feedBack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#a36a9f"
+        android:layoutDirection="rtl"
+        android:id="@+id/panel">
+
+        <TextView
+            android:layout_weight="1"
+            android:text="תודה!"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="25dp"
+            android:id="@+id/synagogaName" />
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:paddingRight="50dp"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/feed_back"
+        android:layout_below="@id/panel" />
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tfila_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="#def5f1"
+    tools:context="com.flower.karovelecha.tfilaSearch">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3fb8a6"
+        android:layoutDirection="rtl"
+        android:id="@+id/panel">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon1_white"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            />
+
+    <TextView
+        android:layout_weight="1"
+        android:text="זמני התפילות הקרובות אליך"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/searchtitle" />
+
+    <ImageButton
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#00FFFFFF"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        android:id="@+id/menu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#d2b9d3"
+        android:layoutDirection="rtl"
+        android:id="@+id/second_panel"
+        android:layout_below="@+id/data"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon1_search"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="חיפוש זמני תפילות כללי"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/searchdate"
+        android:layout_below="@+id/search_panel">
+
+    </Spinner>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/pass"
+        android:layout_below="@+id/second_panel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/pass"
+        android:layout_below="@+id/searchOne"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView3" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_panel"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true">
+
+        <com.flower.karovelecha.wheelViewLabary.WheelView android:id="@+id/search"
+            android:layout_height="125dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.25"/>
+
+        <com.flower.karovelecha.wheelViewLabary.WheelView android:id="@+id/subject"
+        android:layout_height="125dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.5"/>
+
+        <com.flower.karovelecha.wheelViewLabary.WheelView android:id="@+id/kind"
+            android:layout_height="125dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1.25"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl"
+        android:id="@+id/data"
+        android:background="#def5f1"
+        android:layout_below="@+id/panel"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:id="@+id/searchOne"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/search_panel"
+        android:layout_alignParentLeft="true"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/search" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:background="#00FFFFFF"
+        android:src="@drawable/home1"
+        android:id="@+id/home"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp" />
+
+    <ListView
+        android:background="#00def5f1"
+        android:id="@+id/moredata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView3" />
+
+</RelativeLayout>

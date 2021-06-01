@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/menu_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/menu_rouds"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/tfila_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@drawable/tfila_search"
+                android:background="#00FFFFFF"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentRight="true" />
+
+            <Button
+                android:id="@+id/setting"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@android:drawable/ic_menu_info_details" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/shiur_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/shiur_search"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/ishuv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ishuv_search"
+            android:background="#00FFFFFF"
+            android:layout_weight="1"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/mikve_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/mikve_search"
+            android:background="#00FFFFFF"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="25dp">
+
+        <ImageButton
+            android:id="@+id/massage_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/massage_button"
+            android:background="#00FFFFFF"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/contact_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/contact_button"
+            android:background="#00FFFFFF"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/publish_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/publish_button"
+            android:background="#00FFFFFF"
+            android:padding="10dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

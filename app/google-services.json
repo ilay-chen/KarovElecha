@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "241870810492",
+    "firebase_url": "https://karovelecha-d08b8.firebaseio.com",
+    "project_id": "karovelecha-d08b8",
+    "storage_bucket": "karovelecha-d08b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241870810492:android:296892d116b2fb3c",
+        "android_client_info": {
+          "package_name": "com.flower.karovelecha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241870810492-kd7i3n6e72afjgqtr6e6855p0cqs33fv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flower.karovelecha",
+            "certificate_hash": "B9213CED3F0D67FC5C6F359C9A398F23CB5A9EB6"
+          }
+        },
+        {
+          "client_id": "241870810492-lgskq7jl544n6psjpubk8c6vc4t1brm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyp9QvRI3AYN1VQoN9-dnmgozWSK4ZsOc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241870810492-lgskq7jl544n6psjpubk8c6vc4t1brm0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

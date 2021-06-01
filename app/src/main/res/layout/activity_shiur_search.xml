@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_tfila_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="#f6e3e2"
+    tools:context="com.flower.karovelecha.shiurSearch">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#d4716a"
+        android:layoutDirection="rtl"
+        android:id="@+id/panel">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon2_white"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            />
+
+        <TextView
+            android:layout_weight="1"
+            android:text="זמני השיעורים הקרובים אליך"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/searchtitle" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#00FFFFFF"
+            app:srcCompat="@android:drawable/ic_menu_revert"
+            android:id="@+id/menu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#d2b9d3"
+        android:layoutDirection="rtl"
+        android:id="@+id/second_panel"
+        android:layout_below="@+id/data"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon2_search"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="חיפוש זמני שיעורים כללי"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/text_size" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/pass"
+        android:layout_below="@+id/second_panel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/pass"
+        android:layout_below="@+id/searchOne"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:background="#00FFFFFF"
+        android:src="@drawable/home2"
+        android:id="@+id/home"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp" />
+
+    <ListView
+        android:id="@+id/moredata"
+        android:background="#00f6e3e2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/search_panel"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.flower.karovelecha.wheelViewLabary.WheelView android:id="@+id/country"
+            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <com.flower.karovelecha.wheelViewLabary.WheelView android:id="@+id/city"
+            android:layout_height="150dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/searchdate"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_below="@+id/search_panel"
+        android:layout_toLeftOf="@+id/choose_date"
+        android:src="@drawable/dates_picker"
+        android:scaleType="fitXY"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layoutDirection="rtl"
+        android:textDirection="rtl"
+        android:background="#f6e3e2"
+        android:id="@+id/data"
+        android:layout_below="@+id/panel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/searchOne"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/search_panel"
+        android:layout_alignParentLeft="true"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/search" />
+
+</RelativeLayout>
